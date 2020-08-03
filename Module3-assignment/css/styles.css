@@ -1,23 +1,18 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
+  background-color: #6600CC;
+  font-family: Comic Sans MS;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #f6b319;
+  background-color: #CC99FF;
+  color : ffffff;
   border-radius: 0;
   border: 0;
 }
 
-#logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-}
 
 .navbar-brand {
   padding-top: 25px;
@@ -25,7 +20,7 @@ body {
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: #000000;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -37,12 +32,42 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
+
+#nav-list a {
+  color: white;
+  text-align: center;
 }
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
+
+#nav-list a:hover {
+  background-color: #8243d6;
+}
+/* END HEADER */
+
+/* Section */
+#home {
+  margin-bottom: 30px;
+}
+
+.row {
+  
+  position: relative;
+  float: left;
+}
+
+.row > div > article {
+  background-color: white;
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 12px;
+  color: black;
+  opacity: 0.8;
+}
+/* End Section */
+
+
+@media (max-width: 767px) {
+  .row > div > article {
+    width: 80%;
+    margin: 20px auto 0;
+  }
 }
